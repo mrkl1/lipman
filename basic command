@@ -1,0 +1,4 @@
+//compilation c++17
+g++ -std=c++17 retMval.cpp
+//set perm sh script
+sudo chmod 774 err.sh
