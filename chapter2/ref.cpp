@@ -39,6 +39,28 @@ void pointerEx(){
     int *ip=0, *&r = ip;
     std::cout<<ip<<r<<std::endl;
 
+    int i = 43;
+    const int &r1 = i;
+    const int &r2 = 42;
+    i = 55;
+    std::cout<<"r1 "<<r1<<" "<<r2<<" "<<42<<"\n";
+
+    int errNumb = 0;
+    //константный указатель
+    //тут нельзя поменять только адрес
+    int *const curErr = &errNumb;
+    const double pi = 3.14;
+    //константный указатель на константный объект
+    //нельзя поменять адрес и значение напрямую
+    //через объект можно,  хотя хз в чем смысл так делать
+    double test =4;
+    const double *const pip = &test;
+    std::cout<<*pip<<std::endl;
+
+    //const позволит изменить значение объекта
+    //а constexpr не позволит скомпилировать
+    //test = 8;
+    std::cout<<*pip<<std::endl;
 }
 
 

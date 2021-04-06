@@ -9,5 +9,6 @@
 int main(){
     int a = 10;
     std::cout<<a+1<<std::endl;
+    std::cout<<five<<std::endl;
     return 0;
 }

@@ -5,3 +5,5 @@
 extern int a;
 
 int a = 5;
+
+extern const int five = 5;

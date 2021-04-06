@@ -8,4 +8,6 @@
 4) зачем нужен extern
 https://www.cyberforum.ru/cpp-beginners/thread1783229.html
 
-5) тестирование 
+5) разобраться с константными указателями/ссылками 
+https://habr.com/ru/post/348198/
+https://habr.com/ru/post/206458/
