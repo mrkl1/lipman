@@ -1,0 +1,109 @@
+
+//так складывать строки нельзя
+
+string s = "z"+"x"
+//чтобы сложение было успешным
+нужно складывать через string+
+т.е. чтобы хотя бы  с одной стороны был объект string
+по другому нельзя
+//
+string s = s1 + "z"+"x"
+string s = "z"+ s1 + +"x"
+
+//строковый литерал
+const char *narrow = "abcd";
+Символьные литералы
+
+Символьный литерал состоит из символьной константы.
+Он представляется символом, заключенным в
+одинарные кавычки. Существует пять типов символьных литералов:
+
+    char , например'a'
+
+    UTF-8 типа char ( char8_t в c++ 20), например u8'a'
+
+     wchar_t , например L'a'
+
+    UTF-16 типа char16_t , например u'a'
+
+    UTF-32  типа char32_t , например U'a'
+ //
+
+
+ //список функций для проверки символов
+  Functions
+ isalnum
+ 	checks if a character is alphanumeric
+ (function)
+ isalpha
+ 	checks if a character is alphabetic
+ (function)
+ islower
+ 	checks if a character is lowercase
+ (function)
+ isupper
+ 	checks if a character is an uppercase character
+ (function)
+ isdigit
+ 	checks if a character is a digit
+ (function)
+ isxdigit
+ 	checks if a character is a hexadecimal character
+ (function)
+ iscntrl
+ 	checks if a character is a control character
+ (function)
+ isgraph
+ 	checks if a character is a graphical character
+ (function)
+ isspace
+ 	checks if a character is a space character
+ (function)
+ isblank
+ (C++11)
+ 	checks if a character is a blank character
+ (function)
+ isprint
+ 	checks if a character is a printing character
+ (function)
+ ispunct
+ 	checks if a character is a punctuation character
+ (function)
+ tolower
+ 	converts a character to lowercase
+ (function)
+ toupper
+ 	converts a character to uppercase
+//
+
+//если нужно перебрать все элементы массива
+то проще всего сделать такой конструкцией
+на каждой итерации сивол строки копируется в c
+ //for range
+//
+```
+    string str = "example string";
+    for (auto c: str ){
+        cout<<c "\n";
+    }
+```
+если нужно изменить элемент в оригинальной строке,
+то объявлять можно не переменную а ссылку
+********************************************************
+вектор - шаблон класса (class template)
+вектор - коллекция объектов одинакового типа, кажому
+из которых присвоен индекс.
+Вектор это контейнер, это значит что он содержит
+другие объекты в себе
+
+процесс создания класса или функции по шаблону называется
+instantiation - созданием экземпляра
+
+     * у вектора много способов инициализации, при необходимости
+     * можно найти тут не буду особо описывать
+     * можно задавать начальные списки, размер, емкость
+     * создавать определенное число одинаковых элементов и тд
+
+
+
+
